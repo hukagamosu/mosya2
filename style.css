@@ -1,0 +1,111 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+/* ヘッダー */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  list-style-type: none;
+  margin: 0 auto;
+  font-family: "Noto Sans JP";
+}
+/* ヘッダーロゴ */
+.logo {
+ font-size: 34px;
+font-weight: bold;
+border: 1px solid #000000;
+text-decoration: none;
+}
+/* ヘッダーナビ */
+.nav {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0 30px;
+}
+.nav > a {
+  text-decoration: none;
+}
+/* トップ画像 */
+.top-photo {
+  height: 400px;
+  width: 100%;
+}
+/* 見出し */
+.heading {
+  font-size: 34px;
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+  padding-top: 50px;
+  font-family: "Noto Sans JP";
+}
+/* About */
+.About {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+/* KazukiAsahina */
+.profile {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.contents > li {
+  font-size: 18px;
+  font-family: Noto Sans Japanese;
+}
+/* works */
+.works {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+.item {
+  width: calc(100%/3);
+  padding-bottom: 50px;
+}
+.item_center {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.works > p {
+  font-size: 18px;
+  font-family: "Noto Sans JP";
+}
+/* フッター */
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Noto Sans JP";
+}
+
+/* スマートフォン用 */
+@media (max-width: 767px) {
+  .item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .works {
+    display: none;
+    margin: 0 auto;
+    max-width: 767px;
+    width: 100%;
+  }
+
+  
+}
